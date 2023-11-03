@@ -1,0 +1,35 @@
+
+# ===============================
+# = Hibernate datasource
+# ===============================
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost/email_verification
+    username: postgres
+    password: password
+  # ===============================
+  # = JPA configurations
+  # ===============================
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    database-platform: POSTGRESQL
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+# ===============================
+# = Email SMTP configurations
+# ===============================
+  mail:
+    host: mail.bcv.org.ve
+    port: 25
+    username:
+    password: 
+    properties:
+      mail:
+        smtp:
+          auth: false
+          starttls:
+            enable: false
