@@ -23,7 +23,7 @@ spring:
 # = Email SMTP configurations
 # ===============================
   mail:
-    host: mail.gmail.com
+    host: localhost
     port: 25
     username:
     password: 
