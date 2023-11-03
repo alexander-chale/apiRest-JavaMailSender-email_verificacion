@@ -23,7 +23,7 @@ spring:
 # = Email SMTP configurations
 # ===============================
   mail:
-    host: mail.bcv.org.ve
+    host: mail.gmail.com
     port: 25
     username:
     password: 
